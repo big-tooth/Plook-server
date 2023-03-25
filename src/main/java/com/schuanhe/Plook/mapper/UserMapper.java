@@ -29,7 +29,7 @@ public interface UserMapper{
      * @param user user对象来添加
      * @return 返回增加的条数
      */
-    int addUser(@RequestParam("user") User user);
+    User addUser(@RequestParam("user") User user);
 
     /**
      * 通过用户名查询数据

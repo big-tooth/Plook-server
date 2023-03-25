@@ -13,12 +13,23 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public class CurPool {
 
+    //链接的用户名，websocket实体
     public static Map<String, WebSocket> webSockets = new ConcurrentHashMap<>();
 
-    //房间
+    //房间 房间id，进入房间的用户id
     public static Map<String, List<String>> roomList = new HashMap<>();
 
-    //记录这个b在那个房间
+    //记录这个b在那个房间 用户id，房间id
     public static Map<String,String> userByRoom = new HashMap<>();
+
+
+    //通过用户id获取当前用户所在房间id
+    public static Map<Integer,Integer> userIdByRoomId = new HashMap<>();
+
+    //通过用户id获取用户的socket对象
+    public static Map<Integer, WebSocket> userSockets = new ConcurrentHashMap<>();
+
+    //通过房间id,获取房间所有人的list
+    public static Map<Integer,List<Integer>> roomIdByIdList = new HashMap<>();
 
 }

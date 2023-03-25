@@ -1,11 +1,15 @@
+import com.schuanhe.Plook.SpringbootApplication;
 import com.schuanhe.Plook.entity.User;
 import com.schuanhe.Plook.service.UserService;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ContextConfiguration;
 
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,classes = SpringbootApplication.class)
+@ContextConfiguration
+public class UserTest {
 
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class Test {
     @Autowired
     UserService userService;
 
@@ -13,16 +17,31 @@ public class Test {
      * 登录测试
      * 如果账号密码正确则登录成功且返回正确的数据，否则返回null
      */
-    @org.junit.jupiter.api.Test
+    @Test
     void testLogin(){
         User user = new User();
         user.setUsername("admin");
-        user.setPassword("123456");
+        user.setPassword("1234567");
         System.out.println(userService.Login(user));
         System.out.println("啊大大");
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
+    void testRegister(){
+        User user = new User();
+        user.setUsername("admin");
+        user.setPassword("123456");
+        User register = userService.Register(user);
+        if (register.getId() != null){
+            System.out.println("注册成功"+register);
+        }else {
+            System.out.println("注册失败");
+        }
+    }
+
+
+
+    @Test
     void testAllUser(){
         System.out.println(userService.queryUserList());
     }
