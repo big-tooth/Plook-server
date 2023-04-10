@@ -1,15 +1,15 @@
-package com.schuanhe.Plook.mapper;
+package com.schuanhe.plook.mapper;
 
 
-import com.schuanhe.Plook.entity.User;
+import com.schuanhe.plook.entity.User;
 import org.apache.ibatis.annotations.Mapper;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
 @Mapper
-@Component
 public interface UserMapper{
     /**
      * 通过账号密码传参

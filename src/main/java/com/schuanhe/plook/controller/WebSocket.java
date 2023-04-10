@@ -1,7 +1,7 @@
-package com.schuanhe.Plook.controller;
+package com.schuanhe.plook.controller;
 
-import com.schuanhe.Plook.service.SocketService;
-import com.schuanhe.Plook.utils.CurPool;
+import com.schuanhe.plook.service.SocketService;
+import com.schuanhe.plook.utils.CurPool;
 import jakarta.websocket.OnClose;
 import jakarta.websocket.OnMessage;
 import jakarta.websocket.OnOpen;

@@ -1,7 +1,7 @@
-package com.schuanhe.Plook.utils;
+package com.schuanhe.plook.utils;
 
 
-import com.schuanhe.Plook.controller.WebSocket;
+import com.schuanhe.plook.controller.WebSocket;
 
 import java.util.HashMap;
 import java.util.List;

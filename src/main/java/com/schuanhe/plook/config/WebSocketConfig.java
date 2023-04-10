@@ -1,4 +1,4 @@
-package com.schuanhe.Plook.config;
+package com.schuanhe.plook.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

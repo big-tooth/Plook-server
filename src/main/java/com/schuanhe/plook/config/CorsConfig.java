@@ -1,4 +1,4 @@
-package com.schuanhe.Plook.config;
+package com.schuanhe.plook.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -16,7 +16,7 @@ public class CorsConfig {
         CorsConfiguration corsConfiguration = new CorsConfiguration();
         //  你需要跨域的地址  注意这里的 127.0.0.1 != localhost
         // * 表示对所有的地址都可以访问
-        corsConfiguration.addAllowedOriginPattern("*");
+        corsConfiguration.addAllowedOrigin("*");
         //  跨域的请求头
         corsConfiguration.addAllowedHeader("*"); // 2
         //  跨域的请求方法

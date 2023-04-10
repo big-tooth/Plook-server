@@ -1,12 +1,12 @@
-package com.schuanhe.Plook.mapper;
+package com.schuanhe.plook.mapper;
 
-import com.schuanhe.Plook.entity.Room;
-import com.schuanhe.Plook.entity.RoomChat;
+import com.schuanhe.plook.entity.Room;
+import com.schuanhe.plook.entity.RoomChat;
 import org.apache.ibatis.annotations.Mapper;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.stereotype.Component;
 
-@Mapper
-@Component
+@MapperScan
 public interface RoomMapper {
 
     /**

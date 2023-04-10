@@ -1,7 +1,6 @@
-package com.schuanhe.Plook.service;
+package com.schuanhe.plook.service;
 
-import com.schuanhe.Plook.entity.Room;
-import com.schuanhe.Plook.entity.RoomChat;
+import com.schuanhe.plook.entity.Room;
 
 public interface RoomService {
 
@@ -10,7 +9,7 @@ public interface RoomService {
      * @param userId userId
      * @return 返回
      */
-    boolean addRoom(Integer userId,String roomName);
+    boolean addRoom(Integer userId, String roomName);
 
     /**
      * 通过id获取房间信息
