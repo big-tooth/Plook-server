@@ -8,8 +8,8 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
 
 mybatis:
-  type-aliases-package: com.schuanhe.Plook.entity
+  type-aliases-package: com.schuanhe.plook.entity
   #在yml文件中做了以下配置就无需做mybatis-config.xml配置，如果使用了mybatis-config.xml配置，就把下面两行注掉，将第三行配置打开
-  mapper-locations: classpath:/mappers/*.xml
+  mapper-locations: com.schuanhe.plook.mapper/*.xml
   #config-location: classpath:mybatis-config.xml
 debug: false

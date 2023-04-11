@@ -1,6 +1,6 @@
-package com.schuanhe.Plook.service;
+package com.schuanhe.plook.service;
 
-import com.schuanhe.Plook.entity.User;
+import com.schuanhe.plook.entity.User;
 
 import java.util.List;
 

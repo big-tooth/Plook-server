@@ -1,6 +1,6 @@
-import com.schuanhe.Plook.SpringbootApplication;
-import com.schuanhe.Plook.entity.User;
-import com.schuanhe.Plook.service.UserService;
+import com.schuanhe.plook.SpringbootApplication;
+import com.schuanhe.plook.entity.User;
+import com.schuanhe.plook.service.UserService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

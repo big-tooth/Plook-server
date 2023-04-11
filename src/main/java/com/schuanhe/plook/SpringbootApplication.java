@@ -1,17 +1,16 @@
-package com.schuanhe.Plook;
+package com.schuanhe.plook;
 
-import com.schuanhe.Plook.utils.CurPool;
+import com.schuanhe.plook.utils.CurPool;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.support.ManagedList;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.context.annotation.ComponentScan;
 
 import java.util.List;
 
 @SpringBootApplication
-@MapperScan(basePackages = {"com.schuanhe.Plook.mapper"})
+@MapperScan(basePackages = {"com.schuanhe.plook.mapper"})
 public class SpringbootApplication {
 
     public static void main(String[] args) {

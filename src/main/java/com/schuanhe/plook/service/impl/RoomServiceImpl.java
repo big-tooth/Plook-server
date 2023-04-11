@@ -1,10 +1,10 @@
-package com.schuanhe.Plook.service.impl;
+package com.schuanhe.plook.service.impl;
 
-import com.schuanhe.Plook.entity.Room;
-import com.schuanhe.Plook.entity.RoomChat;
-import com.schuanhe.Plook.mapper.RoomMapper;
-import com.schuanhe.Plook.service.RoomService;
-import com.schuanhe.Plook.utils.CurPool;
+import com.schuanhe.plook.entity.Room;
+import com.schuanhe.plook.entity.RoomChat;
+import com.schuanhe.plook.mapper.RoomMapper;
+import com.schuanhe.plook.service.RoomService;
+import com.schuanhe.plook.utils.CurPool;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.support.ManagedList;
 import org.springframework.stereotype.Service;
@@ -19,7 +19,7 @@ public class RoomServiceImpl implements RoomService {
     RoomMapper roomMapper;
 
     @Override
-    public boolean addRoom(Integer userId) {
+    public boolean addRoom(Integer userId, String roomName) {
         List<String> names = new ManagedList<>();
         CurPool.roomList.put("系统默认房间(幻鹤)",names);
         return false;

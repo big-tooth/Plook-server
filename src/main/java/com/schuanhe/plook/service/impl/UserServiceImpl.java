@@ -1,9 +1,9 @@
-package com.schuanhe.Plook.service.impl;
+package com.schuanhe.plook.service.impl;
 
 
-import com.schuanhe.Plook.entity.User;
-import com.schuanhe.Plook.mapper.UserMapper;
-import com.schuanhe.Plook.service.UserService;
+import com.schuanhe.plook.entity.User;
+import com.schuanhe.plook.mapper.UserMapper;
+import com.schuanhe.plook.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

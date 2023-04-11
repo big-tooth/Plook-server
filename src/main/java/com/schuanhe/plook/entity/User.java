@@ -1,4 +1,4 @@
-package com.schuanhe.Plook.entity;
+package com.schuanhe.plook.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
