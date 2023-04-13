@@ -2,7 +2,7 @@ package com.schuanhe.plook.service.impl;
 
 //import com.example.springboot.controller.WebSocket;
 import com.schuanhe.plook.service.SocketService;
-        import lombok.extern.slf4j.Slf4j;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 //过时的

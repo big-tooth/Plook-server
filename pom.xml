@@ -20,7 +20,7 @@
     <!-- 项目信息 -->
     <groupId>com.schuanhe.plook</groupId>
     <artifactId>plook</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.1</version>
 
     <!-- 项目依赖 -->
     <dependencies>
@@ -90,22 +90,25 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/jakarta.websocket/jakarta.websocket-client-api -->
-        <dependency>
-            <groupId>jakarta.websocket</groupId>
-            <artifactId>jakarta.websocket-client-api</artifactId>
-            <version>2.1.0</version>
-            <scope>provided</scope>
-        </dependency>
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/jakarta.websocket/jakarta.websocket-client-api &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>jakarta.websocket</groupId>-->
+<!--            <artifactId>jakarta.websocket-client-api</artifactId>-->
+<!--            <version>2.1.0</version>-->
+<!--            <scope>provided</scope>-->
+<!--        </dependency>-->
 
-        <!-- https://mvnrepository.com/artifact/jakarta.websocket/jakarta.websocket-api -->
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/jakarta.websocket/jakarta.websocket-api &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>jakarta.websocket</groupId>-->
+<!--            <artifactId>jakarta.websocket-api</artifactId>-->
+<!--            <version>2.1.0</version>-->
+<!--            <scope>provided</scope>-->
+<!--        </dependency>-->
         <dependency>
-            <groupId>jakarta.websocket</groupId>
-            <artifactId>jakarta.websocket-api</artifactId>
-            <version>2.1.0</version>
-            <scope>provided</scope>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-websocket</artifactId>
         </dependency>
-
 
     </dependencies>
 
